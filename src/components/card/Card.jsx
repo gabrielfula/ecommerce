@@ -1,4 +1,4 @@
-import AddCart from "../AddCart/AddCart";
+import AddCart from "../addcart/AddCart";
 import { ContentCard, Desc, Icons, ImageProducts, MapProdutos } from "./styles";
 import { AiOutlineHeart, AiOutlineEye, AiFillStar } from "react-icons/ai";
 
