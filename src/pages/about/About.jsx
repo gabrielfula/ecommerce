@@ -72,7 +72,7 @@ export default function About() {
         </div>
         <div>
           <img
-            src="/public/imagens/man-person-suit-tie-church-professional-pxhere.com.jpg"
+            src="/imagens/man-person-suit-tie-church-professional-pxhere.com.jpg"
             alt=""
           />
           <h4>Brad Pitt</h4>

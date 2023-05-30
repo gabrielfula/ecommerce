@@ -15,11 +15,17 @@ export const ContentAbout = styled.div`
       font-size: 3rem;
     }
   }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    gap: 0;
+  }
 `;
 
 export const GridIcon = styled.div`
   padding-top: 10rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
   justify-content: center;
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Hamburguer, Menu, Nav } from "./styles";
 import { BsCart } from "react-icons/bs";
-import { RiSearch2Line } from "react-icons/ri";
+
 import { CiUser } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import Search from "../search/Search";
@@ -19,25 +19,31 @@ export default function Navbar() {
         <Link to="">Exclusive</Link>
         <Menu show={show}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={changeShow}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={changeShow}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contacts</Link>
+            <Link to="/contact" onClick={changeShow}>
+              Contacts
+            </Link>
           </li>
           <div>
             <li>
               <Search />
             </li>
             <li>
-              <Link to="/cart">
+              <Link to="/cart" onClick={changeShow}>
                 <BsCart size={20} />
               </Link>
             </li>
             <li>
-              <CiUser size={20} />
+              <CiUser size={20} onClick={changeShow} />
             </li>
           </div>
         </Menu>

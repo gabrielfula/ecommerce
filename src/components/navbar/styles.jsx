@@ -56,7 +56,7 @@ export const Menu = styled.ul`
     }
   }
 
-  input {
+  /* input {
     height: 1.6rem;
     border: none;
     width: 200px;
@@ -81,7 +81,7 @@ export const Menu = styled.ul`
     @media (max-width: 992px) {
       display: none;
     }
-  }
+  } */
 
   li {
     display: flex;
