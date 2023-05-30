@@ -9,8 +9,8 @@ export default function Joias() {
   const [joias, setJoias] = useState([]);
 
   useEffect(() => {
-    api.get("/products/category/jewelery").then((res) => {
-      setJoias(res.data);
+    api.get("/search?q=joias").then((res) => {
+      setJoias(res.data.results.slice(0, 15));
     });
   }, []);
 

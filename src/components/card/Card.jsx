@@ -8,7 +8,7 @@ export default function Card({ item }) {
       <section>
         <MapProdutos key={item.id}>
           <ImageProducts>
-            <img src={item.image} alt="imagem produto" />
+            <img src={item.thumbnail} alt="imagem produto" />
           </ImageProducts>
           <Icons>
             <AiOutlineHeart />

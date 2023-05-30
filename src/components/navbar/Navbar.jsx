@@ -4,6 +4,7 @@ import { BsCart } from "react-icons/bs";
 import { RiSearch2Line } from "react-icons/ri";
 import { CiUser } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import Search from "../search/Search";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
@@ -28,10 +29,7 @@ export default function Navbar() {
           </li>
           <div>
             <li>
-              <input type="text" placeholder="What are you looking for ?" />
-              <button>
-                <RiSearch2Line size={15} />
-              </button>
+              <Search />
             </li>
             <li>
               <Link to="/cart">

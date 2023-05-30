@@ -8,8 +8,9 @@ export default function Men() {
   const [clothes, setClothes] = useState([]);
 
   useEffect(() => {
-    api.get("/products/category/men's clothing").then((res) => {
-      setClothes(res.data);
+    api.get("/search?q=camisamasculina").then((res) => {
+      setClothes(res.data.results.slice(0, 15));
+      console.log(clothes);
     });
   }, []);
   return (
@@ -18,7 +19,7 @@ export default function Men() {
       <h2>These are our Men's clothing</h2>
       <Content>
         {clothes.map((item) => {
-          <Card item={item} key={item.id} />;
+          return <Card item={item} key={item.id} />;
         })}
       </Content>
     </Container>

@@ -12,7 +12,6 @@ export const ContentCard = styled.div`
   }
 
   img {
-    max-width: 100%;
     height: 100%;
     width: 100%;
   }
@@ -35,8 +34,8 @@ export const ContentCard = styled.div`
 `;
 
 export const MapProdutos = styled.div`
-  width: 270px;
-  height: 220px;
+  width: auto;
+  height: auto;
   gap: 1rem;
   justify-content: center;
   padding: 1rem;
@@ -44,6 +43,7 @@ export const MapProdutos = styled.div`
   background: ${({ theme }) => theme.colors.background};
   border-radius: 7px;
   max-width: 270px;
+  max-height: 200px;
 
   @media (max-width: 992px) {
     padding-top: 1rem;

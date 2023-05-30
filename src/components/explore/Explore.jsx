@@ -8,9 +8,8 @@ export default function Explore() {
   const [produto, setProduto] = useState([]);
 
   useEffect(() => {
-    api.get("/products?limit=5").then((result) => {
-      setProduto(result.data);
-      console.log(produto);
+    api.get("/search?q=best").then((res) => {
+      setProduto(res.data.results.slice(0, 5));
     });
   }, []);
 

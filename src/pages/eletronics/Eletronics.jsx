@@ -9,9 +9,9 @@ export default function Eletronics() {
 
   useEffect(() => {
     api
-      .get("/products/category/electronics")
+      .get("/search?q=celular")
       .then((res) => {
-        setEletro(res.data);
+        setEletro(res.data.results.slice(0, 15));
         console.log(eletro);
       })
       .catch((err) => {

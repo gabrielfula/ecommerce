@@ -8,8 +8,8 @@ export default function Women() {
   const [women, setWomen] = useState([]);
 
   useEffect(() => {
-    api.get("/products/category/women's clothing").then((res) => {
-      setWomen(res.data);
+    api.get("/search?q=vestidofeminino").then((res) => {
+      setWomen(res.data.results.slice(0, 15));
     });
   }, []);
 

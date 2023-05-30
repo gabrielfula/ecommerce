@@ -13,13 +13,13 @@ export default function Categories() {
         <div>
           <Link to="/eletronic">
             <BsPhone size={40} />
-            Electronics
+            Smartphone
           </Link>
         </div>
         <div>
           <Link to="/joias">
             <GiBigDiamondRing size={40} />
-            Jewelery
+            Joias
           </Link>
         </div>
         <div>
