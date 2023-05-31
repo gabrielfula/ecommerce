@@ -21,9 +21,10 @@ export default function Eletronics() {
 
   return (
     <Container>
-      <h3>Eletronics</h3>
-      <h2>These are our Eletronics</h2>
+      <h3>Smartphones</h3>
+      <h2>These are our Smartphones</h2>
       <Content>
+        {eletro.length === 0 && <span>Carregando...</span>}
         {eletro.map((item) => {
           return <Card item={item} key={item.id} />;
         })}

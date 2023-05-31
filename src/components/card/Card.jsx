@@ -19,7 +19,7 @@ export default function Card({ item }) {
           <AddCart />
           <p>{item.title}</p>
           <section>
-            <span>${item.price}</span>
+            <span>R${item.price}</span>
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />

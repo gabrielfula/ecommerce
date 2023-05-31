@@ -26,6 +26,14 @@ export const Container = styled.section`
     padding: 2rem;
     font-size: 12px;
   }
+
+  h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+  }
 `;
 
 export const ContentCategories = styled.div`

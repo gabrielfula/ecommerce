@@ -19,6 +19,7 @@ export default function Joias() {
       <h3>Jewelery</h3>
       <h2>These are our Jewelry</h2>
       <Content>
+        {joias.length === 0 && <span>Carregando...</span>}
         {joias.map((item) => {
           return <Card item={item} key={item.id} />;
         })}

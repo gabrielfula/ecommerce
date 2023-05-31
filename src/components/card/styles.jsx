@@ -12,8 +12,8 @@ export const ContentCard = styled.div`
   }
 
   img {
-    height: 100%;
-    width: 100%;
+    height: 130%;
+    width: 140%;
   }
 
   p {
@@ -38,7 +38,7 @@ export const MapProdutos = styled.div`
   height: auto;
   gap: 1rem;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   background: ${({ theme }) => theme.colors.background};
   border-radius: 7px;

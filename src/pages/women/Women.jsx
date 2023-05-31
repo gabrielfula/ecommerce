@@ -18,6 +18,7 @@ export default function Women() {
       <h3>Women's</h3>
       <h2>These are our Women's clothing</h2>
       <Content>
+        {women.length === 0 && <span>Carregando...</span>}
         {women.map((item) => {
           return <Card item={item} key={item.id} />;
         })}

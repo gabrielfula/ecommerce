@@ -18,6 +18,7 @@ export default function Explore() {
       <h3>Our Products</h3>
       <h2>Explore Our Products</h2>
       <ContentExplore>
+        {produto.length === 0 && <span>Carregando...</span>}
         {produto.map((item) => {
           return <Card key={item.id} item={item} />;
         })}
