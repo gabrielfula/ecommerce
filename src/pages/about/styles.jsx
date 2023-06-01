@@ -57,21 +57,49 @@ export const GridIcon = styled.div`
 `;
 
 export const PeopleGrid = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-self: center;
+  align-self: center;
+  width: auto;
   padding-top: 10rem;
-  gap: 5rem;
+  gap: 10rem;
 
-  img {
-    width: 30%;
+  h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 30px;
   }
 
-  div {
+  section {
     display: flex;
-    width: auto;
-    align-items: center;
     flex-direction: column;
-    background: ${({ theme }) => theme.colors.background};
+    gap: 1rem;
+
+    div {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+`;
+
+export const CardPeople = styled.div`
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+  background: ${({ theme }) => theme.colors.background};
+
+  img {
+    width: 60%;
+    padding: 1rem;
+    height: 100%;
+
+    @media (max-width: 992px) {
+      /* height: 100%; */
+    }
   }
 `;

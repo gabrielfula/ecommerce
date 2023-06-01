@@ -81,3 +81,26 @@ export const Desc = styled.div`
     }
   }
 `;
+
+export const ButtonAdd = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: ${({ theme }) => theme.colors.black};
+  height: 45px;
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+  font-size: 13px;
+  cursor: pointer;
+
+  button {
+    cursor: pointer;
+    background: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: ${({ theme }) => theme.colors.white};
+  }
+`;

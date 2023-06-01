@@ -4,12 +4,17 @@ export const ContentContact = styled.div`
   display: flex;
   justify-content: center;
   gap: 5rem;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const FormEmail = styled.table`
   gap: 1rem;
   width: auto;
-  height: auto;
+  height: 100%;
   box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   padding: 0 1rem;
@@ -23,6 +28,12 @@ export const FormEmail = styled.table`
     padding-left: 1rem;
     border-radius: 5px;
     font-family: "Archivo";
+
+    @media (max-width: 992px) {
+      max-width: 100px;
+      padding-left: 1rem;
+      height: 50px;
+    }
   }
 
   textarea {
@@ -45,7 +56,7 @@ export const FormEmail = styled.table`
 `;
 
 export const ContactUs = styled.div`
-  width: 25%;
+  width: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -81,5 +92,12 @@ export const ContactUs = styled.div`
     gap: 2rem;
     padding: 1rem;
     border-bottom: 1px solid ${({ theme }) => theme.colors.black};
+  }
+`;
+
+export const ContentEmail = styled.div`
+  @media (max-width: 992px) {
+    padding: 3rem;
+    width: auto;
   }
 `;

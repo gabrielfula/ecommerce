@@ -1,13 +1,15 @@
+import { Line } from "./styles";
+
 export default function TableCart({ item }) {
   return (
     <>
       <tr>
-        <td>{item.name}</td>
-        <td>${item.price}</td>
-        <td>
+        <Line>{item.title}</Line>
+        <Line>${item.price}</Line>
+        <Line>
           <input type="number" />
-        </td>
-        <td>${item.price}</td>
+        </Line>
+        <Line>${item.price}</Line>
       </tr>
     </>
   );

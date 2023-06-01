@@ -1,8 +1,10 @@
 import { Container } from "../../components/categories/styles";
-import { ContentAbout, GridIcon, PeopleGrid } from "./styles";
+import { CardPeople, ContentAbout, GridIcon, PeopleGrid } from "./styles";
 import { BiStore } from "react-icons/bi";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { TbMoneybag } from "react-icons/tb";
+import { TfiLinkedin } from "react-icons/tfi";
+import { AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai";
 
 export default function About() {
   return (
@@ -54,30 +56,53 @@ export default function About() {
         </div>
       </GridIcon>
       <PeopleGrid>
-        <div>
-          <img
-            src="/imagens/man-person-suit-tie-church-professional-pxhere.com.jpg"
-            alt="CEO"
-          />
-          <h4>Neymar Jr</h4>
+        <section>
+          <CardPeople>
+            <img
+              src="/imagens/man-person-suit-tie-church-professional-pxhere.com.png"
+              alt="CEO"
+            />
+          </CardPeople>
+          <h4>Emma Watson</h4>
           <p>Founder</p>
-        </div>
-        <div>
-          <img
-            src="/imagens/man-person-suit-tie-church-professional-pxhere.com.jpg"
-            alt="Designer"
-          />
+          <div>
+            <AiOutlineTwitter size={20} />
+            <AiOutlineInstagram size={20} />
+            <TfiLinkedin size={20} />
+          </div>
+        </section>
+
+        <section>
+          <CardPeople>
+            <img
+              src="/imagens/man-person-suit-tie-church-professional-pxhere.com.png"
+              alt="Designer"
+            />
+          </CardPeople>
           <h4>Cauã Reymond</h4>
           <p>Product Designer</p>
-        </div>
-        <div>
-          <img
-            src="/imagens/man-person-suit-tie-church-professional-pxhere.com.jpg"
-            alt=""
-          />
+          <div>
+            <AiOutlineTwitter size={20} />
+            <AiOutlineInstagram size={20} />
+            <TfiLinkedin size={20} />
+          </div>
+        </section>
+
+        <section>
+          <CardPeople>
+            <img
+              src="/imagens/man-person-suit-tie-church-professional-pxhere.com.png"
+              alt=""
+            />
+          </CardPeople>
           <h4>Brad Pitt</h4>
           <p>Estágiario</p>
-        </div>
+          <div>
+            <AiOutlineTwitter size={20} />
+            <AiOutlineInstagram size={20} />
+            <TfiLinkedin size={20} />
+          </div>
+        </section>
       </PeopleGrid>
     </Container>
   );

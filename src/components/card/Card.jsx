@@ -1,8 +1,24 @@
-import AddCart from "../addcart/AddCart";
-import { ContentCard, Desc, Icons, ImageProducts, MapProdutos } from "./styles";
-import { AiOutlineHeart, AiOutlineEye, AiFillStar } from "react-icons/ai";
+import { setItem } from "../../service/LocalStorage";
+import {
+  ContentCard,
+  Desc,
+  Icons,
+  ImageProducts,
+  MapProdutos,
+  ButtonAdd,
+} from "./styles";
+import {
+  AiOutlineHeart,
+  AiOutlineEye,
+  AiFillStar,
+  AiOutlineShoppingCart,
+} from "react-icons/ai";
 
 export default function Card({ item }) {
+  const handleSubmit = () => {
+    setItem("Carrinho", item);
+  };
+
   return (
     <ContentCard>
       <section>
@@ -16,7 +32,13 @@ export default function Card({ item }) {
           </Icons>
         </MapProdutos>
         <Desc>
-          <AddCart />
+          <ButtonAdd>
+            <button onClick={handleSubmit}>
+              <AiOutlineShoppingCart size={25} />
+              Add to Cart
+            </button>
+          </ButtonAdd>
+
           <p>{item.title}</p>
           <section>
             <span>R${item.price}</span>
