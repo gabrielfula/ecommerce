@@ -24,7 +24,7 @@ export const Container = styled.section`
 
   @media (max-width: 992px) {
     padding: 2rem;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   h4 {
