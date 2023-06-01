@@ -30,20 +30,20 @@ export const ContentFooter = styled.div`
 `;
 
 export const Table = styled.table`
-  margin: 20px 0 40px;
-  font-size: 10px;
+  td {
+    font-size: 1rem;
+  }
 
   @media (max-width: 992px) {
     width: 100%;
 
+    td {
+      font-size: 11px;
+    }
+
     tr {
       line-height: 200%;
     }
-  }
-`;
-
-export const ContainerFooter = styled.div`
-  @media (max-width: 992px) {
   }
 `;
 

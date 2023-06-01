@@ -94,10 +94,3 @@ export const ContactUs = styled.div`
     border-bottom: 1px solid ${({ theme }) => theme.colors.black};
   }
 `;
-
-export const ContentEmail = styled.div`
-  @media (max-width: 992px) {
-    padding: 3rem;
-    width: auto;
-  }
-`;

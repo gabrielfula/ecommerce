@@ -1,4 +1,4 @@
-import { ContainerFooter, ContentFooter, IconFooter, Table } from "./styles";
+import { ContentFooter, IconFooter, Table } from "./styles";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { GrFacebookOption } from "react-icons/gr";
 import { TbTruckDelivery } from "react-icons/tb";
@@ -7,7 +7,7 @@ import { MdOutlineSecurity } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <ContainerFooter>
+    <div>
       <IconFooter>
         <div>
           <TbTruckDelivery size={50} />
@@ -58,6 +58,6 @@ export default function Footer() {
         </Table>
         <div>Copyright Rimel 2022. All right reserved</div>
       </ContentFooter>
-    </ContainerFooter>
+    </div>
   );
 }
