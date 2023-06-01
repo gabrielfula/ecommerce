@@ -38,6 +38,11 @@ export const TitleCart = styled.div`
 export const ContentCart = styled.div`
   display: flex;
   justify-content: space-between;
+  
+   @media (max-width: 992px) {
+     flex-direction: column;
+       justify-content: center;
+    }
 `;
 
 export const Button = styled.a`
@@ -53,4 +58,6 @@ export const Button = styled.a`
   border: none;
   background: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.white};
+  
+  
 `;
