@@ -41,8 +41,9 @@ export const ContentCart = styled.div`
   
    @media (max-width: 992px) {
      flex-direction: column;
-       justify-content: center;
-       gap: 3rem;
+     justify-content: center;
+     gap: 3rem;
+     align-items: center;
     }
 `;
 
