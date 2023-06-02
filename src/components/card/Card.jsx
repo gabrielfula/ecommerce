@@ -1,4 +1,5 @@
-import { setItem } from "../../service/LocalStorage";
+import { useState } from "react";
+import { getItem, setItem } from "../../service/LocalStorage";
 import {
   ContentCard,
   Desc,
@@ -13,18 +14,29 @@ import {
   AiFillStar,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 export default function Card({ item }) {
+  const [data, setData] = useState(item);
+  const navigate = useNavigate();
+
+  console.log(data);
+
   const handleSubmit = () => {
-    setItem("Carrinho", item);
+    setItem("Carrinho", data);
+  };
+
+  const openItem = () => {
+    console.log("Open Page", item);
+    navigate(`/produto`);
   };
 
   return (
     <ContentCard>
       <section>
-        <MapProdutos key={item.id}>
+        <MapProdutos key={data.id}>
           <ImageProducts>
-            <img src={item.thumbnail} alt="imagem produto" />
+            <img src={data.thumbnail} alt="imagem produto" onClick={openItem} />
           </ImageProducts>
           <Icons>
             <AiOutlineHeart />
@@ -39,9 +51,9 @@ export default function Card({ item }) {
             </button>
           </ButtonAdd>
 
-          <p>{item.title}</p>
+          <p>{data.title}</p>
           <section>
-            <span>R${item.price}</span>
+            <span>R${data.price}</span>
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />

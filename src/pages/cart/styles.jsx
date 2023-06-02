@@ -38,6 +38,13 @@ export const TitleCart = styled.div`
 export const ContentCart = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+  }
 `;
 
 export const Button = styled.a`

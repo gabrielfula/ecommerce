@@ -1,23 +1,13 @@
 import { Container } from "../../components/categories/styles";
 import { Button, ContentCart, Table, TitleCart } from "./styles";
 import TableCart from "../../components/TableCart/TableCart";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { getItem } from "../../service/LocalStorage";
 
 export default function Cart() {
-  const [produto, setProduto] = useState([
-    {
-      id: 1,
-      title: "Exemplo",
-      prince: 123,
-    },
-  ]);
+  const [data, setData] = useState([getItem("Carrinho") || []]);
 
-  // // useEffect(() => {
-  // //   setCart(getItem("Carrinho"));
-  // //   console.log(cart);
-  // //   setProduto(setCart);
-  // // }, []);
+  console.log(data);
 
   return (
     <Container>
@@ -36,14 +26,14 @@ export default function Cart() {
         </thead>
 
         <tbody>
-          {produto.length === 0 && (
+          {data.length === 0 && (
             <tr>
               <td colSpan={4} style={{ textAlign: "center" }}>
                 o Carrinho está vazio
               </td>
             </tr>
           )}
-          {produto.map((item) => (
+          {data.map((item) => (
             <TableCart item={item} key={item.id} />
           ))}
         </tbody>

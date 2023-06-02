@@ -10,6 +10,7 @@ import Error from "./pages/error/Error";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Busca from "./pages/search/Busca";
+import Produto from "./pages/produto/Produto";
 
 export const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ export const router = createBrowserRouter([
       {
         path: "/search",
         element: <Busca />,
+      },
+      {
+        path: "/produto",
+        element: <Produto />,
       },
     ],
   },
