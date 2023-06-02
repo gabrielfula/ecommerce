@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   border-bottom: 0.5px solid ${({ theme }) => theme.colors.gray};
   background: ${({ theme }) => theme.colors.white};
-  font-size: 13px;
+  font-size: 15px;
 
   a {
     color: ${({ theme }) => theme.colors.black};
