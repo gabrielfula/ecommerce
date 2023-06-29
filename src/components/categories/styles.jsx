@@ -34,6 +34,10 @@ export const Container = styled.section`
     font-size: 36px;
     line-height: 48px;
   }
+
+  span {
+    color: ${({ theme }) => theme.colors.primary};
+  }
 `;
 
 export const ContentCategories = styled.div`

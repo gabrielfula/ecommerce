@@ -6,8 +6,8 @@ export const ContentFooter = styled.div`
   flex-direction: column;
   justify-content: end;
   gap: 2rem;
-  height: 20rem;
-  width: 100%;
+  height: 100%;
+  width: auto;
   padding: 8.4rem;
 
   color: ${({ theme }) => theme.colors.white};

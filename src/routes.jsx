@@ -11,8 +11,8 @@ import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Busca from "./pages/search/Busca";
 import Login from "./pages/login/Login";
-import { useSelector } from "react-redux";
-import { userSelect } from "./hooks/userSlice";
+import Autenticated from "./pages/Autenticated/Autenticated";
+import User from "./pages/user/User";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +22,10 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <Autenticated />,
+      },
+      {
+        path: "/home",
         element: <Home />,
       },
       {
@@ -57,8 +61,8 @@ export const router = createBrowserRouter([
         element: <Busca />,
       },
       {
-        path: "/login",
-        element: <Login />,
+        path: "/user",
+        element: <User />,
       },
     ],
   },

@@ -8,7 +8,7 @@ import { MdOutlineSecurity } from "react-icons/md";
 export default function Footer() {
   return (
     <div>
-      <IconFooter>
+      {/* <IconFooter>
         <div>
           <TbTruckDelivery size={50} />
           <span>FREE AND FAST DELIVERY</span>
@@ -24,7 +24,7 @@ export default function Footer() {
           <span>MONEY BACK GUARANTEE</span>
           <p>We reurn money within 30 days</p>
         </div>
-      </IconFooter>
+      </IconFooter> */}
       <ContentFooter>
         <Table>
           <thead>

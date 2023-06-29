@@ -19,7 +19,7 @@ export default function Navbar() {
         <Link to="">Exclusive</Link>
         <Menu show={show}>
           <li>
-            <Link to="/" onClick={changeShow}>
+            <Link to="/home" onClick={changeShow}>
               Home
             </Link>
           </li>
@@ -43,7 +43,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/login">
+              <Link to="/user">
                 <CiUser size={20} onClick={changeShow} />
               </Link>
             </li>
