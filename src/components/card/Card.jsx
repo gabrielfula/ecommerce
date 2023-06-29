@@ -28,7 +28,7 @@ export default function Card({ item }) {
 
   const openItem = () => {
     console.log("Open Page", item);
-    navigate(`/produto`);
+    navigate(`/produto/${data.id}`);
   };
 
   return (

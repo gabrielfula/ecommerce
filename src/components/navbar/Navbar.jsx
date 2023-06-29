@@ -43,7 +43,9 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <CiUser size={20} onClick={changeShow} />
+              <Link to="/login">
+                <CiUser size={20} onClick={changeShow} />
+              </Link>
             </li>
           </div>
         </Menu>
